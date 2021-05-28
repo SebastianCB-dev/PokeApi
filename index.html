@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonAPI</title>
+    <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+</head>
+<body>
+    <div id="container-main" >
+        <div class="title" id="title-main">
+            <img src="assets/imgs/logoPokemon.png" alt="Logo Pokemon">
+        </div>
+        <form class="form" id="form-main">
+            <label>Ingresa un numero: </label>
+            <input type="number" min="1" max="898" value="1" id="numberPokemonConsult">
+            <button type="button" id="buttonConsultPokemon">Consultar Pokemon</button>
+            <button type="button" id="buttonConsultRandom">Escoger un Pokemon Aleatorio</button>
+        </form>
+        <div id="pokemon-select" >
+            <div class="card">
+                <div class="fondo"></div>
+                <img alt="Pokemon image" id="image-pokemon">
+                <span id="name-pokemon-container"><span id="name-pokemon"></span> <span id="hp-pokemon"></span></span>
+                <span id="experience-pokemon"><span id="number-experience-pokemon"></span><span>exp</span></span>
+                <div class="info">
+                    <div><span id="info-ataque"></span><span  class="title-info">Ataque</span></div>
+                    <div><span id="info-ataqueSpecial"></span><span  class="title-info">Ataque especial</span></div>
+                    <div><span id="info-defense"></span><span class="title-info">Defensa</span></div>
+                </div>
+            </div>
+            <a href="index.html" id="inicio">INICIO</a>
+        </div>
+    </div>
+    <div id="error-caracter">
+        <p>Numero incorrecto!</p>
+    </div>
+    <div id="error-process">
+        <p>Error del servidor</p>
+    </div>
+
+   
+    
+    <script src="src/js/main.js"></script>
+</body>
+</html>
